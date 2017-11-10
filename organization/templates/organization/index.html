@@ -1,0 +1,10 @@
+
+<h1 style="background-color:DodgerBlue;">SUST EVENT PORTAL</h1>
+<h2>THE TOTAL LIST OF SUST Organization Name</h2>
+
+
+<ul>
+    {% for org in all_organization %}
+    <li><a href = "/organization/{{ org.id }}/">{{ org.name }}</a></li>
+    {% endfor %}
+</ul>
