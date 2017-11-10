@@ -1,1 +1,13 @@
-{{ organization }}
+<img src="{{ organization.organization_logo }}">
+<h1>{{ organization.name }}</h1>
+
+<h3>Established</h3>
+
+
+<ul>
+    {% for name in organization.name.all %}
+    <li>
+
+    </li>
+    {% endfor %}
+</ul>
