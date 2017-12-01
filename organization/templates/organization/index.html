@@ -1,4 +1,4 @@
-
+{#{%  load url from future %}#}
 <h1 style="background-color:DodgerBlue;">SUST EVENT PORTAL</h1>
 <h2>THE TOTAL LIST OF SUST Organization Name</h2>
 <p>Overview
@@ -18,13 +18,13 @@ function myFunction() {
     document.getElementById("demo2").innerHTML = "reg:2013135029";
 }
 </script>
-
+{##}
 {% if all_organization %}
 <ul>
-    {% for org in all_organization %}
+    {% for organization in all_organization %}
     <li><a href = "/organization/{{ organization.id }}/">{{ organization.name }}</a></li>
     {% endfor %}
-</ul>
+</ul>#}
 {% else %}
     <h3>YOU not have any organizations</h3>
 {% endif %}

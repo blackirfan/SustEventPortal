@@ -5,7 +5,7 @@ class Organization(models.Model):
     name = models.CharField(max_length=250)
     organization_type =models.CharField(max_length=250)
     established = models.CharField(max_length=250)
-    pecial_event = models.CharField(max_length=1000)
+    # pecial_event = models.CharField(max_length=1000)
 
     def __str__(self):
         return self.name + '  -  ' +self.established

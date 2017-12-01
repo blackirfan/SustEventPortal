@@ -4,5 +4,8 @@ from . import views
 
 urlpatterns = [
     url(r'^$',views.index,name ='index'),
-    url(r'^$', views.detail, name='detail'),
+    url(r'^(?P<organization_id>\d+)/$', views.detail, name='detail'),
+
+
+#in here ? symbol P <organization_id> is resent the table id name.
 ]
